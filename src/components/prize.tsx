@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const Prize = () => {
   const [editMode, setEditMode] = useState(false);

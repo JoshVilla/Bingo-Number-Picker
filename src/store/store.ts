@@ -24,6 +24,7 @@ const useStore = create(
       setPickedNumberStore: (number) => set({ pickedNumberStore: number }),
       bingoPickedNumbers: [],
       addBingoPickedNumber: (number, color) =>
+        //@ts-ignore
         set((state) => ({
           bingoPickedNumbers: [
             { bingoNumber: number, color },

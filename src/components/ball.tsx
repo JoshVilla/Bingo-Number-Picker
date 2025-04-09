@@ -1,4 +1,3 @@
-import React from "react";
 import useStore from "../store/store";
 import { motion } from "framer-motion";
 const Ball = () => {
