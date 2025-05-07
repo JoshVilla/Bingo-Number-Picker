@@ -7,16 +7,21 @@ import Ball from "./components/ball";
 function App() {
   return (
     <React.Fragment>
-      <div className="grid grid-cols-5 sm:grid-cols-1 grid-rows-5 gap-4 h-screen p-2">
-        <div className="col-span-3 row-span-5">
-          <BingoPickedNumbers />
-        </div>
-        <div className="col-span-2 col-start-4 flex items-center">
+      <div className="grid grid-cols-1 md:grid-cols-5 auto-rows-auto gap-4 h-screen p-2">
+        {/* Prize - top on mobile, top-right on desktop */}
+        <div className="flex items-center justify-center md:col-span-2 md:col-start-4">
           <Prize />
         </div>
-        <div className="col-span-2 row-span-4 col-start-4 row-start-2">
+
+        {/* Ball - just below Prize on mobile, below on right side on desktop */}
+        <div className="flex items-center justify-center md:col-span-2 md:row-span-4 md:col-start-4 md:row-start-2">
           <Ball />
-        </div>{" "}
+        </div>
+
+        {/* Bingo Picked Numbers - full width on mobile, left side on desktop */}
+        <div className="md:col-span-3 md:row-span-5">
+          <BingoPickedNumbers />
+        </div>
       </div>
     </React.Fragment>
   );
