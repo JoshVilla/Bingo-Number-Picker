@@ -63,7 +63,7 @@ const Ball = () => {
           onClick={generateRandomNumber}
           className="px-6 py-1 bg-blue-600 hover:bg-blue-700 text-white rounded-sm text-md cursor-pointer"
         >
-          Pick a Ball
+          Pick
         </button>
         <button
           onClick={clearState}
