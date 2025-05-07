@@ -7,7 +7,7 @@ import Ball from "./components/ball";
 function App() {
   return (
     <React.Fragment>
-      <div className="grid grid-cols-5 grid-rows-5 gap-4 h-screen p-2">
+      <div className="grid grid-cols-5 sm:grid-cols-1 grid-rows-5 gap-4 h-screen p-2">
         <div className="col-span-3 row-span-5">
           <BingoPickedNumbers />
         </div>
